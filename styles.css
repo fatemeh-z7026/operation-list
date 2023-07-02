@@ -1,20 +1,20 @@
 :root {
-
-    --color-text: #fff;
-    --color-background: linear-gradient(to right bottom, #ffb88e, #ea5753);
-    --color-container: linear-gradient(
-        to right bottom,
-        rgb(255, 184, 142, 0.44),
-        rgba(255, 255, 255, 0.5)
-    );
-    --color-list: rgba(234, 87, 83, 0.7);
+  --color-text: #fff;
+  --color-background: linear-gradient(to right bottom,  #76b852, #8dc26f);
+  --color-container: linear-gradient(
+    to right bottom,
+    rgba(232, 251, 155, 0.44),
+    rgba(255, 255, 255, 0.5)
+  );
+  --color-list: #76b852;
 }
 html {
   font-size: 62.5%;
 }
 
-body {background: var(--color-background);
-    color: var(--color-text);
+body {
+  background: var(--color-background);
+  color: var(--color-text);
   font-size: 1.5rem;
   font-family: "Ysabeau Infant", sans-serif;
   text-transform: capitalize;
@@ -25,15 +25,14 @@ body {background: var(--color-background);
 }
 
 .container {
- background: var(--color-container);
+  background: var(--color-container);
   max-width: 500px;
   width: 100%;
   border-radius: 20px;
 }
 
-
 .list-head {
-background: var(--color-list);
+  background: var(--color-list);
   text-align: center;
   padding: 5rem 1rem;
   margin: 2rem;
@@ -49,7 +48,7 @@ ol {
 }
 
 li {
-background: var(--color-list);
+  background: var(--color-list);
   margin-bottom: 1rem;
   padding: 1rem 2rem;
   width: 100%;
@@ -64,10 +63,9 @@ li::before {
   content: counter(my-counter) ". ";
 }
 
-
-li:hover{
-    transform: scale(1.1);
-    background-color: rgba(234, 87, 83, 0.9);
-    font-size: 1.6rem;
-    cursor: pointer;
+li:hover {
+  transform: scale(1.1);
+  background-color: rgba(234, 87, 83, 0.9);
+  font-size: 1.6rem;
+  cursor: pointer;
 }
